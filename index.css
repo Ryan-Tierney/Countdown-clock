@@ -1,0 +1,13 @@
+.countercontainer {
+  width: 500px;
+  height: 200px;
+  border: 1px solid rgb(253, 6, 6);
+  background-color: rgb(0, 0, 0);
+  color: red;
+  padding: 200px;
+  margin: 200px;
+}
+
+Counter {
+  color: red;
+}
