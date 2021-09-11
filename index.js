@@ -1,6 +1,6 @@
-const counter = getelementbyId("counter");
+const startingMinutes = 10;
+let time = startingMinutes * 60;
 
-function countdown() {
-  counter = 0;
-  counter += 1;
-}
+const countdownTimer = document.getElementById("countdown");
+
+function updateCountdown() {}
