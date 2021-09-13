@@ -1,21 +1,18 @@
-const startingDays = 16;
-const startinghours = startingDays * 24;
-const startingMinutes = startinghours * 60;
+const startinghours = 24;
 
-let time = startingMinutes * 60;
+let time = startinghours * 24 * 60;
 
 const countdownTimer = document.getElementById("countdown");
 
 setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
-  const days = 16;
-  const hours = 24;
-  const minutes = 1;
+  const hours = Math.floor(time / 24 / 60);
+  const minutes = Math.floor(time / 60);
   let seconds = time % 60;
 
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  countdownTimer.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+  countdownTimer.innerHTML = `${hours}:${minutes}:${seconds}`;
   time--;
 }
