@@ -4,6 +4,12 @@ let time = startingdays * 24 * 60 * 60;
 
 const countdownTimer = document.getElementById("countdown");
 
+const startTimerButton = document.getElementById("startButton");
+
+startTimerButton.onClick = () => {
+  updateCountdown();
+};
+
 setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
