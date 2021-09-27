@@ -3,15 +3,29 @@ body {
   margin: 0;
 }
 
-p {
-  background-color: black;
-  font-family: longshot;
-  color: white;
-  display: inline-flex;
-  font-size: 50px;
+.Daycontainer {
+  display: flex;
   justify-content: center;
-  height: 70px;
-  width: 200px;
-  padding-left: 500px;
-  padding-top: 500px;
+  align-items: center;
+  text-align: center;
+}
+
+.Timecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(85, 4, 190);
+  font-size: 100px;
+}
+
+p {
+  color: rgba(255, 103, 1, 0.966);
+  display: inline;
+  font-size: 50px;
+  height: 10px;
+  width: 70px;
 }
